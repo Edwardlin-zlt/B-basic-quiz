@@ -20,4 +20,8 @@ public class EducationRepository {
                 .filter(education -> Objects.equals(education.getUserId(), userId))
                 .collect(Collectors.toList());
     }
+
+    public void insert(Education education) {
+        educations.add(education);
+    }
 }

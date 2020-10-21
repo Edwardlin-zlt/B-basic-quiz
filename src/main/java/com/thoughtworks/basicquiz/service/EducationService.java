@@ -15,4 +15,8 @@ public class EducationService {
     public List<Education> findEducationsByUserId(Long userId) {
         return educationRepository.findByUserId(userId);
     }
+
+    public void createNewEducation(Education education) {
+        educationRepository.insert(education);
+    }
 }
