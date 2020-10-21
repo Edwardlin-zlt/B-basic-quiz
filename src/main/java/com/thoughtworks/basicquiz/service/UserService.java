@@ -5,6 +5,7 @@ import com.thoughtworks.basicquiz.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -13,7 +14,7 @@ public class UserService {
     public UserService() {
     }
 
-    public Collection<User> findAllUser() {
+    public List<User> findAllUser() {
         return userRepository.findAll();
     }
 }

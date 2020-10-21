@@ -3,10 +3,9 @@ package com.thoughtworks.basicquiz.controller;
 import com.thoughtworks.basicquiz.model.User;
 import com.thoughtworks.basicquiz.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collection;
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -17,7 +16,7 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public Collection<User> findAllUser() {
+    public List<User> findAllUser() {
         return userService.findAllUser();
     }
 }
