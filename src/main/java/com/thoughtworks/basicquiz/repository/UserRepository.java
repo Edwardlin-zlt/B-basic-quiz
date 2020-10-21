@@ -23,4 +23,8 @@ public class UserRepository {
     public List<User> findAll() {
         return new ArrayList<>(userMap.values());
     }
+
+    public User findById(Long id) {
+        return userMap.get(id);
+    }
 }
