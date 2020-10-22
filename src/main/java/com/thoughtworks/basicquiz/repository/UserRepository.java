@@ -30,6 +30,7 @@ public class UserRepository {
     }
 
     public Long insert(User user) {
+        //TODO GTB-工程实践: - UserRepository.java:33 - ++i或i++操作不是线程安全的，可以了解下AtomicInteger
         userId++;
         userMap.put(userId, new User(userId, user.getName(), user.getAge(), user.getAvatar(), user.getDescription()));
         return userId;

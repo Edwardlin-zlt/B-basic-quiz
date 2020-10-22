@@ -15,6 +15,7 @@ public class EducationRepository {
         educations.add(new Education(1L, 2009L, "First level graduation in Graphic Design", "Aspernatur, mollitia, quos maxime eius suscipit sed beatae ducimus quaerat quibusdam perferendis? Iusto, quibusdam asperiores unde repellat."));
     }
 
+    //TODO GTB-知识点: * 对Java8 Stream有不错的使用
     public List<Education> findByUserId(Long userId) {
         return educations.stream()
                 .filter(education -> Objects.equals(education.getUserId(), userId))

@@ -22,6 +22,7 @@ public class UserController {
         return userService.findAllUser();
     }
 
+    //TODO GTB-完成度: - UserController.java:25 Bug，当User不存在的时候，应该抛异常404
     @GetMapping("/users/{id:[\\d]+}")
     public User findUserById(@PathVariable("id") Long id) {
         return userService.findUserByID(id);

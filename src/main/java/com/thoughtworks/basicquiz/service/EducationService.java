@@ -8,6 +8,7 @@ import java.util.List;
 
 @Service
 public class EducationService {
+    //TODO GTB-知识点: - EducationService.java:11 EducationRepository应该使用构造器注入，而非直接new
     private final EducationRepository educationRepository = new EducationRepository();
     public EducationService() {
     }
